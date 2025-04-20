@@ -1,5 +1,5 @@
 use OrderPlaceMent;
-insert into Cutommer_table(CusomerID,CutomerName,CustomerAdrress,CustomerCity,CustomerState,CustomerPostalCode)
+insert into Cutommer_table(CusomerID,customerName,CustomerAdrress,CustomerCity,CustomerState,CustomerPostalCode)
 values
 (1, 'Contemporary Casuals', '1355 S Hines Blvd', 'Gainesville', 'FL', '326012871'),
 (2, 'Value Furniture', '15145 S.W. 17th St.', 'Plano', 'TX', '750947743'),
@@ -43,21 +43,21 @@ INSERT INTO OrderTable (OrderID, OrderDate, CustomerID) VALUES (1008, '2010-10-3
 INSERT INTO OrderTable (OrderID, OrderDate, CustomerID) VALUES (1009, '2010-11-05', 4);
 INSERT INTO OrderTable (OrderID, OrderDate, CustomerID) VALUES (1010, '2010-11-05', 1);
 
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1001, 1, 2);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1001, 2, 2);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1001, 4, 1);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1002, 3, 5);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1003, 3, 3);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1004, 6, 2);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1004, 8, 2);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1005, 4, 4);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1006, 4, 1);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1006, 5, 2);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1006, 7, 2);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1007, 1, 3);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1007, 2, 2);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1008, 3, 3);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1008, 8, 3);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1009, 4, 2);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1009, 7, 3);
-INSERT INTO ORDERLINE_TAVLE (OrderID, ProductID, OrderQuantity) VALUES (1010, 8, 10);
+INSERT INTO OrderLineTable(OrderID, ProductID, OrderQuantity) VALUES (1001, 1, 2);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1001, 2, 2);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1001, 4, 1);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1002, 3, 5);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1003, 3, 3);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1004, 6, 2);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1004, 8, 2);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1005, 4, 4);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1006, 4, 1);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1006, 5, 2);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1006, 7, 2);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1007, 1, 3);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1007, 2, 2);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1008, 3, 3);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1008, 8, 3);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1009, 4, 2);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1009, 7, 3);
+INSERT INTO OrderLineTable (OrderID, ProductID, OrderQuantity) VALUES (1010, 8, 10);

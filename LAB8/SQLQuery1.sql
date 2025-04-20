@@ -26,10 +26,11 @@ CREATE TABLE PRODUCTTABLE
 	ProductID int primary key,
 	ProductDescription Varchar(50) not null,
 	ProductFinish varchar(30),
-	ProductStandardPrice varchar(30),
+	ProductStandardPrice int,
 	ProductLineID int,
 	foreign key(ProductLineID) references PRODUCTLINE(ProductLineID)
 );
+
 Create Table ORDERLINE_TAVLE
 (
 	OrderID int,
@@ -39,3 +40,4 @@ Create Table ORDERLINE_TAVLE
 	foreign key(OrderID) references OrderTable(OrderID),
 	foreign key(ProductID) references PRODUCTTABLE(ProductID)
 );
+

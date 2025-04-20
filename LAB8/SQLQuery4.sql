@@ -1,6 +1,13 @@
-use OrderPlaceMent;
-select Count(*)from OrderTable
-where customerID>2;
+
 
 select *from OrderTable;
+
+EXEC sp_rename 'ORDERLINE_TAVLE', 'OrderLineTable';
+use OrderPlaceMent;
+go
+select name as TotalTable
+from sys.tables
+order by name;
+EXEC sp_rename 'Cutommer_table.cutomerName', 'customerName', 'COLUMN';
+select* from Cutommer_table;
 

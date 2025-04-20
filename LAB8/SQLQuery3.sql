@@ -2,5 +2,5 @@ use OrderPlaceMent;
 select * from Cutommer_table;
 select * from PRODUCTLINE;
 select * from OrderTable;
-select* from ORDERLINE_TAVLE;
-select * from PRODUCTTABLE;
+select* from OrderLineTable;
+select avg(productStandardPrice) from PRODUCTTABLE;
